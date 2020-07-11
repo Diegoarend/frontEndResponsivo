@@ -2,4 +2,4 @@ Resolução de um desafio para criar um site responsivo com imagens para a vers�
 
 Foi utilizando também Gulp na versão mais atualizada. 
 
-Para visualizar o projeto pasta clonar o diretório  ou fazer o download e executar o arquivo "index.html". 
+Para visualizar o projeto basta clonar o diretório  ou fazer o download e executar o arquivo "index.html". 
