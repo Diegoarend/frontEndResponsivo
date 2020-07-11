@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  
+ 
+  html,
+  body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(69,69,69);
+    
+  }
+
+.header {
+    background-image: url(../img/backgroundDesktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 911px;
+    text-align: center;
+    width: 100%;
+   
+  
+  }
+
+  .header__title h1 {
+    color: rgb(84,97,48);
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .header__title p {
+    font-weight: 500;
+    color:rgb(45,59,9) ;
+    font-size: 24px;
+    font-weight: 700;
+    
+  }
+ 
+  
+  .image__mobile { 
+    display: none;
+   
+   
+  }
+  
+  .cards__group {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  
+  }
+  
+  .card {
+    width: 300px;
+    height: 390px;
+    margin: 25px 0px; 
+    padding: 0px;
+
+    
+  }
+  
+  .card__header img {
+    border: 14px solid;
+    border-color:rgb(123,123,123);
+    height: 200px;
+    width: 95%;
+  }
+  
+  .card__body {
+    text-align: center;
+    padding: 0px 10px;
+   
+  }
+  
+  .card__content h2 {
+    font-size: 24px;
+    color: rgb(244,244,244);
+    margin-bottom: 10px;
+    
+  }
+  
+  .card__content p {
+    font-size: 16px;
+    color:rgb(178,178,178);
+    font-weight: 400;
+   
+  }
+  
+  .about__section {
+    background-color:rgb(111,111,111);
+   
+  }
+  .about__groups {
+   
+  display: flex;  
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  }
+  .about__imageholder {
+    max-width: 1400px;
+    display: flex;  
+    width: 100%;
+    margin: 30px 0px;
+    padding:0px ;
+    align-items: center;
+      justify-content: center
+    
+    }
+  
+  .about__image {
+    margin: 30px 40px;
+    padding: 0px;
+    width: 380px;
+    height: 380px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 15px solid;
+    border-color: rgb(52,52,52);
+  }
+
+  .about__image img {
+    display: inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    
+  }
+  .about__content {
+    margin: 30px 20px 30px 0px;
+    padding: 0px 30px;
+    padding-top: 15px;
+  }
+  .about__content h2{
+   
+    color:rgb(255,255,255);
+    font-size: 36px;
+    margin: 50px 5px 20px;
+    font-weight: 700;
+  }
+
+  .about__groups p{
+    color:rgb(230,230,230);
+    font-size: 16px;
+    margin: 10px 5px 0px;
+    font-weight: 400;
+  }
+
+  #italic {
+    font-style: italic;
+  }
+
+  #bold {
+    font-weight: 500;
+  }
+
+  footer {
+    
+    color:rgb(255,255,255);
+    text-align: center;
+    padding: 30px 30px;
+  }
+  
+  footer p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+
+ 
+  @media (max-width: 900px) {
+
+    .card{
+      margin-bottom:0px;
+    }
+    .about__groups {
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        padding:0px;
+    }
+
+    .about__image  {
+      order: -1;
+      margin:10px 0px;
+      padding:0px;    
+  }
+    .about__content h2 {
+      margin: 0px;
+      padding:0px;
+  }
+  .about__groups p {
+    margin: 20px 0px;
+    padding:0px;
+}
+  .about__content {
+    margin: 10px;
+    padding:0px;
+}
+    
+  }
+
+  @media (max-width: 700px) {
+  
+  .header{
+    background-image: none;
+    height: 22vh;
+  }
+
+  .header__title h1 {
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .header__title p { 
+  color: #ffffff;
+  padding:0px 60px 20px;
+  margin-bottom: 05px;
+   
+   font-size:16px;
+   text-align: center;
+   font-weight: 400;
+  }
+
+  .image__mobile { 
+    margin-top: 5px;
+    display: initial;
+    width: 100vw;
+
+   
+  }
+  .image__mobile img{
+
+    width: 100%
+  }
+}
+
+  @media(max-width: 500px){
+    .about__imageholder {
+
+      display: flex;  
+      width: 100%;
+      margin: 30px 0px;
+      padding:0px ;
+      
+      }
+    
+    .about__image {
+      align-items: center;
+      padding: 0px;
+      width: 300px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+    border-radius: 50%;
+     
+    }
+  
+    .about__image img {
+      width: 100%;
+    height: auto; 
+  }}
+
+
